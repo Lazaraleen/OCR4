@@ -7,12 +7,13 @@
   --grey3: #7E7E7E;
   --grey4: #353535;
   --white: #fff;
+  --tiny-blue: #99E2D0;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   box-sizing: border-box;
 }
@@ -22,25 +23,25 @@ a {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 1.75em;
   font-family: "Shrikhand", sans-serif;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
 
 h4 {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 1.1em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -90,19 +91,24 @@ header img {
 }
 
 #reservation p {
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 300;
   padding: 10px 0;
 }
 
 button {
   color: var(--white);
-  background: linear-gradient(var(--secondaire), var(--primaire));
+  background: linear-gradient(200.64deg, var(--primaire) -5.2%, var(--secondaire) 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
   padding: 13px 18px;
   margin: 20px 0;
+}
+
+button:hover {
+  color: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 #fonctionnement {
@@ -112,10 +118,11 @@ button {
   margin: 0 0 25px 20px;
 }
 #fonctionnement article {
+  position: relative;
   height: 72px;
   display: flex;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 32px;
   background: var(--grey1);
   border-radius: 20px;
   z-index: 2;
@@ -131,15 +138,47 @@ button {
 }
 
 .circle {
-  height: 24px;
-  width: 24px;
+  height: 1.5em;
+  width: 1.5em;
   border-radius: 50%;
   background: var(--primaire);
   color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  position: absolute;
+  left: -0.75rem;
+}
+
+.heart i {
+  z-index: 6;
+  color: var(--white);
+  background: var(--white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.5em;
+}
+
+.heartcolor i {
+  position: absolute;
+  color: var(--white);
+  background: linear-gradient(200.64deg, var(--primaire) -5.2%, var(--secondaire) 110.74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: linear-gradient(200.64deg, var(--primaire) -5.2%, var(--secondaire) 110.74%);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0px;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: 1000ms;
+}
+
+.heartcolor i:hover {
+  opacity: 1;
 }
 
 #restaurants {
@@ -172,17 +211,17 @@ button {
   width: 100%;
   object-fit: cover;
 }
-.resto aside:nth-child(1) {
-  height: 60%;
-}
 .resto aside div {
   flex-direction: column;
   width: 100%;
   padding: 10px 0 10px 12px;
+  position: relative;
 }
 .resto aside div:nth-child(2) {
   width: 15%;
-  justify-content: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .resto a {
   width: 100%;
@@ -191,12 +230,6 @@ button {
   width: 100%;
   height: 180px;
   object-fit: cover;
-}
-
-.heart i {
-  color: var(--white);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
 footer {
