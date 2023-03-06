@@ -1,6 +1,5 @@
 header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -9,4 +8,16 @@ header img{
     width: 162px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+header a {
+    padding-top: 6px;
+}
+
+header i {
+    transform:scaleX(-1);
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    font-size: 1.3em;
 }

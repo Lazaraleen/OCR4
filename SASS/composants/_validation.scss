@@ -1,0 +1,22 @@
+.validation {
+    position: relative;
+    right: -12px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--tertiaire);
+    height: 100%;
+    width: 3.9em;
+    padding-right: 0;
+    border-radius: 0 20px 20px 0;
+    transition: margin-left 2000ms;
+}
+
+.validation i {
+    font-size: 1.3em;
+}
+
+.partmenu article:active .validation {
+    display: flex;
+}

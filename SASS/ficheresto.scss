@@ -1,14 +1,13 @@
-@import "./utils/variables.scss";
-@import "./base/base.scss";
+@import "./utils/_variables.scss";
+@import "./base/_base.scss";
 
-@import "./layout/header.scss";
-@import "./composants/presentation.scss";
-@import "./composants/heart.scss";
-@import "./composants/bottomcard.scss";
-@import "./composants/restodetail.scss";
-@import "./pages/partmenu.scss";
-@import "./composants/button.scss";
+@import "./layout/_header.scss";
+@import "./composants/_presentation.scss";
+@import "./composants/_heart.scss";
+@import "./composants/_bottomcard.scss";
+@import "./composants/_restodetail.scss";
+@import "./composants/_validation.scss";
+@import "./pages/_partmenu.scss";
+@import "./composants/_button.scss";
 
-
-
-@import "./layout/footer.scss";
+@import "./layout/_footer.scss";

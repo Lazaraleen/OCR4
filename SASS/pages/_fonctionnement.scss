@@ -1,12 +1,12 @@
 #fonctionnement {
     padding: 45px 0;
-    h2{ margin: 0 0 25px 20px;}
+    h2{ margin: 0 0 1.5em 1.5em;}
     article {
         position: relative;
         height: 72px;
         display: flex;
         align-items: center;
-        margin: 0 32px;
+        margin: 0 2em;
         background: var(--grey1);
         border-radius: 20px;
         z-index: 2;
@@ -33,4 +33,28 @@
     align-items: center;
     position: absolute;
     left: -0.75rem;
+}
+
+@media screen and (min-width: 634px) {
+    #fonctionnement {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #fonctionnement {
+        max-width: 1024px;
+        width: 100%;
+        margin: auto;
+        .fonctrow {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            article {
+                width: 30%;
+                font-size: 1em;
+            }
+        }
+    }
 }

@@ -51,7 +51,6 @@ p {
 
 header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -60,6 +59,18 @@ header img {
   width: 162px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+header a {
+  padding-top: 6px;
+}
+
+header i {
+  transform: scaleX(-1);
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  font-size: 1.3em;
 }
 
 #ville {
@@ -107,7 +118,7 @@ button {
 }
 
 button:hover {
-  color: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
@@ -115,14 +126,14 @@ button:hover {
   padding: 45px 0;
 }
 #fonctionnement h2 {
-  margin: 0 0 25px 20px;
+  margin: 0 0 1.5em 1.5em;
 }
 #fonctionnement article {
   position: relative;
   height: 72px;
   display: flex;
   align-items: center;
-  margin: 0 32px;
+  margin: 0 2em;
   background: var(--grey1);
   border-radius: 20px;
   z-index: 2;
@@ -150,13 +161,39 @@ button:hover {
   left: -0.75rem;
 }
 
+@media screen and (min-width: 634px) {
+  #fonctionnement {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #fonctionnement {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+  }
+  #fonctionnement .fonctrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #fonctionnement .fonctrow article {
+    width: 30%;
+    font-size: 1em;
+  }
+}
 .heart i {
   z-index: 6;
   color: var(--white);
-  background: var(--white);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 1.5em;
+}
+
+.heart i:hover {
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: var(--primaire);
 }
 
 .heartcolor i {
@@ -167,10 +204,6 @@ button:hover {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: linear-gradient(200.64deg, var(--primaire) -5.2%, var(--secondaire) 110.74%);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 0px;
   font-size: 1.5em;
   opacity: 0;
@@ -187,7 +220,7 @@ button:hover {
 }
 #restaurants h2 {
   margin-left: 20px;
-  padding: 50px 0 20px 0;
+  padding: 2em 0 1.5em 1em;
 }
 
 .resto {
@@ -222,6 +255,7 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 10px 10px 10px 0;
 }
 .resto a {
   width: 100%;
@@ -232,6 +266,20 @@ button:hover {
   object-fit: cover;
 }
 
+@media screen and (min-width: 634px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .resto {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .resto {
+    width: 23%;
+  }
+}
 footer {
   background: var(--grey4);
   color: var(--white);

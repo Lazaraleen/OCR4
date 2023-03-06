@@ -4,7 +4,7 @@
     background: var(--grey1);
     z-index: 2;
     position: relative;
-    top: -30px;
+    top: -5em;
     
     .bouton {
         display: flex;
@@ -16,14 +16,26 @@ body {
     position: relative;
 }
 
-main {
-    padding-bottom: 170px;
-}
-
 footer {
     position: absolute;
-    bottom: 0px;
+    bottom: -6em;
     height: 200px;
     z-index: 5;
     width: 100%;
+}
+
+
+@media screen and (min-width: 634px) {
+    .restodetail {
+        aside:nth-child(1) {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .restodetail {
+        max-width: 1024px;
+        margin: auto;
+    }
 }
