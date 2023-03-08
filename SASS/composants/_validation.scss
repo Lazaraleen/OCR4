@@ -1,22 +1,27 @@
 .validation {
     position: relative;
-    right: -12px;
-    display: none;
+    right: -13px;
+    overflow: hidden;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
     background-color: var(--tertiaire);
+    color: var(--white);
     height: 100%;
-    width: 3.9em;
-    padding-right: 0;
+    width: 0.3em;
     border-radius: 0 20px 20px 0;
-    transition: margin-left 2000ms;
+    opacity: 0;
+    transition-duration: 2s, 0.5s;
+	transition-property: width, opacity;
+	transition-delay: 0s, 0.5s;
 }
 
 .validation i {
     font-size: 1.3em;
 }
 
-.partmenu article:active .validation {
-    display: flex;
+.validation:hover {
+    opacity: 1;
+    width: 7em;
+    min-width: 1.5em;
 }

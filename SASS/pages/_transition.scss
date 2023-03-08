@@ -1,0 +1,25 @@
+.partmenu {
+    .transition1 {
+        opacity: 0;
+        animation: transit 3s forwards;
+    }
+    .transition2 {
+        opacity: 0;
+        animation: transit 3s 3s forwards;
+    }
+    .transition3 {
+        opacity: 0;
+        animation: transit 3s 6s forwards;
+    }
+}
+
+@keyframes transit {
+    0% {
+        transform: translateY(255px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

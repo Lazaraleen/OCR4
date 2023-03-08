@@ -30,7 +30,8 @@
             width: 80%;
         }
         div:nth-child(2) {
-            width: 3em;
+            width: 2em;
+            margin-left: 10px;
         }
     }
 }
@@ -39,5 +40,11 @@
     .partmenu {
         max-width: 634px;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 634px) {    
+    .partmenu article div:nth-child(1) {
+        width: 65%;
     }
 }
