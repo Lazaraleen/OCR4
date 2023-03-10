@@ -49,6 +49,80 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+#loader {
+  background-color: var(--primaire);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 7;
+  opacity: 1;
+  animation: disparition 3200ms forwards;
+}
+
+svg {
+  position: absolute;
+  top: 120%;
+}
+
+.cup {
+  height: 140px;
+  width: 180px;
+  border: 6px solid var(--primaire);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  border-radius: 0 0 70px 70px;
+  background: url(../../assets/images/coffeesecondary.png);
+  box-shadow: 0 0 0 6px var(--white);
+  background-repeat: repeat-x;
+  background-position: 0 140px;
+  animation: fill 2800ms forwards;
+}
+
+.handle {
+  height: 70px;
+  width: 40px;
+  background-color: transparent;
+  border: 6px solid var(--white);
+  position: relative;
+  left: 186px;
+  top: 2px;
+  border-radius: 0 25px 80px 0;
+}
+
+@keyframes fill {
+  0% {
+    background-position: 0 140px;
+  }
+  20% {
+    background-position: -270px 104px;
+  }
+  40% {
+    background-position: -540px 68px;
+  }
+  60% {
+    background-position: -810px 32px;
+  }
+  80% {
+    background-position: -1080px -4px;
+  }
+  100% {
+    background-position: -1350px -40px;
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -284,6 +358,10 @@ footer {
   background: var(--grey4);
   color: var(--white);
   padding: 25px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--white);
 }
 footer i {
   width: 13px;
