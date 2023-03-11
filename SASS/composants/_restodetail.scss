@@ -5,7 +5,7 @@
     z-index: 2;
     position: relative;
     top: -5em;
-    
+
     .bouton {
         display: flex;
         justify-content: center;
@@ -25,13 +25,7 @@ footer {
 }
 
 
-@media screen and (min-width: 634px) {
-    .restodetail {
-        aside:nth-child(1) {
-            text-align: center;
-        }
-    }
-}
+
 
 @media screen and (min-width: 1024px) {
     .restodetail {

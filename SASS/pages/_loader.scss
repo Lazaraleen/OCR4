@@ -7,6 +7,7 @@
     position: absolute;
     z-index: 7;
     opacity: 1;
+    display: flex;
     animation: disparition 3200ms forwards;
 }
 
@@ -66,5 +67,6 @@ svg {
 @keyframes disparition {
     0% { opacity:1;}
     99% { opacity:1;}
-    100% { opacity:0;}
+    100% { opacity:0;
+        z-index: -1;}
 }

@@ -58,6 +58,7 @@ p {
   position: absolute;
   z-index: 7;
   opacity: 1;
+  display: flex;
   animation: disparition 3200ms forwards;
 }
 
@@ -121,6 +122,7 @@ svg {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 header {
@@ -189,6 +191,7 @@ button {
   border: none;
   padding: 13px 18px;
   margin: 20px 0;
+  cursor: pointer;
 }
 
 button:hover {
@@ -202,24 +205,29 @@ button:hover {
 #fonctionnement h2 {
   margin: 0 0 1.5em 1.5em;
 }
-#fonctionnement article {
+#fonctionnement aside div {
   position: relative;
   height: 72px;
   display: flex;
   align-items: center;
+  padding-right: 20px;
   margin: 0 2em;
   background: var(--grey1);
   border-radius: 20px;
   z-index: 2;
   margin-bottom: 24px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
-#fonctionnement article p {
+#fonctionnement aside div p {
   font-weight: 500;
 }
-#fonctionnement article i {
-  margin: 0 30px;
+#fonctionnement aside div i {
+  margin: 0 20px;
   color: var(--grey3);
+}
+#fonctionnement aside div:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .circle {
@@ -252,7 +260,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-around;
   }
-  #fonctionnement .fonctrow article {
+  #fonctionnement .fonctrow aside div {
     width: 30%;
     font-size: 1em;
   }
@@ -262,12 +270,16 @@ button:hover {
   color: var(--white);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: black;
   font-size: 1.5em;
 }
 
 .heart i:hover {
   -webkit-text-stroke-width: 0px;
   -webkit-text-stroke-color: var(--primaire);
+  -moz-text-stroke-width: 0px;
+  -moz-text-stroke-color: var(--primaire);
 }
 
 .heartcolor i {
@@ -312,19 +324,22 @@ button:hover {
   text-decoration: none;
   color: black;
 }
-.resto aside {
+.resto article {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   width: 100%;
   object-fit: cover;
 }
-.resto aside div {
+.resto article div {
   flex-direction: column;
-  width: 100%;
   padding: 10px 0 10px 12px;
   position: relative;
 }
-.resto aside div:nth-child(2) {
+.resto article div:nth-child(1) {
+  width: 80%;
+}
+.resto article div:nth-child(2) {
   width: 15%;
   display: flex;
   justify-content: center;

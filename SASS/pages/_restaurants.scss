@@ -23,16 +23,19 @@
     text-decoration: none;
     color: black;
     
-    aside {
+    article {
         display: flex;    
         justify-content: space-around;
+        flex-direction: row;
         width: 100%;
         object-fit: cover;
         div {
             flex-direction: column;
-            width: 100%;
             padding: 10px 0 10px 12px;
             position: relative;
+        }
+        div:nth-child(1) {
+            width: 80%;
         }
         div:nth-child(2) {
             width: 15%;

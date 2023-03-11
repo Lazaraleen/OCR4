@@ -1,15 +1,15 @@
 .partmenu {
     .transition1 {
         opacity: 0;
-        animation: transit 3s forwards;
+        animation: transit 2s forwards;
     }
     .transition2 {
         opacity: 0;
-        animation: transit 3s 3s forwards;
+        animation: transit 2s 1.25s forwards;
     }
     .transition3 {
         opacity: 0;
-        animation: transit 3s 6s forwards;
+        animation: transit 2s 2.5s forwards;
     }
 }
 
