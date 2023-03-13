@@ -119,6 +119,7 @@ svg {
   }
   99% {
     opacity: 1;
+    z-index: 7;
   }
   100% {
     opacity: 0;
