@@ -167,6 +167,11 @@ header i {
   margin-right: 17px;
 }
 
+#ville h1 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
 #reservation {
   background: #F6F6F6;
   display: flex;
@@ -357,6 +362,22 @@ button:hover {
 }
 .resto a {
   width: 100%;
+  position: relative;
+}
+.resto a .new {
+  position: absolute;
+  z-index: 5;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resto a .new p {
+  color: #008766;
 }
 .resto img {
   width: 100%;
