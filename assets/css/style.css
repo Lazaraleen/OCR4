@@ -167,11 +167,6 @@ header i {
   margin-right: 17px;
 }
 
-#ville h1 {
-  font-size: 1em;
-  font-weight: 300;
-}
-
 #reservation {
   background: #F6F6F6;
   display: flex;
@@ -318,9 +313,10 @@ button:hover {
   background: #F6F6F6;
   padding: 20px 0 25px 0;
 }
-#restaurants h2 {
+#restaurants h1 {
   margin-left: 20px;
   padding: 2em 0 1.5em 1em;
+  font-size: 1.5em;
 }
 
 .resto {
