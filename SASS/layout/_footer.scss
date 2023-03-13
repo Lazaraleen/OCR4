@@ -1,10 +1,10 @@
 footer {
-    background: var(--grey4);
-    color: var(--white);
+    background: $grey4;
+    color: $white;
     padding: 25px;
     a {
         text-decoration: none;
-        color: var(--white)
+        color: $white;
     }
     i {
         width: 13px;

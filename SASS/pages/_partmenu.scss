@@ -9,7 +9,7 @@
     hr {
         margin: 7px 0 13px 20px;
         width: 40px;
-        border: 2px solid var(--tiny-blue);
+        border: 2px solid $tiny-blue;
     }
     article {
         height: 68px;
@@ -18,7 +18,7 @@
         justify-content: space-between;
         margin: 0 20px;
         padding: 0 12px;
-        background: var(--white);
+        background: $white;
         border-radius: 20px;
         margin-bottom: 24px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);

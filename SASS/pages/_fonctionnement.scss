@@ -8,7 +8,7 @@
         align-items: center;
         padding-right: 20px;
         margin: 0 2em;
-        background: var(--grey1);
+        background: $grey1;
         border-radius: 20px;
         z-index: 2;
         margin-bottom: 24px;
@@ -31,8 +31,8 @@
     height: 1.5em;
     width: 1.5em;
     border-radius: 50%;
-    background: var(--primaire);
-    color: var(--white);
+    background: $primaire;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;

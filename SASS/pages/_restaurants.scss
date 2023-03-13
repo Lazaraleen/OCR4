@@ -1,5 +1,5 @@
 #restaurants {
-    background: var(--grey1);
+    background: $grey1;
     padding: 20px 0 25px 0;
     h2{
         margin-left: 20px;
@@ -9,7 +9,7 @@
 
 
 .resto {
-    background: var(--white);
+    background: $white;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@
     margin: auto;
     margin-bottom: 20px;
     text-decoration: none;
-    color: black;
+    color: $black;
     
     article {
         display: flex;    

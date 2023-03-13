@@ -1,5 +1,6 @@
+
 #loader {
-    background-color: var(--primaire);
+    background-color: $primaire;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -19,13 +20,13 @@ svg {
 .cup {
     height: 140px;
     width: 180px;
-    border: 6px solid var(--primaire);
+    border: 6px solid $primaire;
     position: absolute;
     top: 40%;
     left: 40%;
     border-radius: 0 0 70px 70px;
     background: url(../../assets/images/coffeesecondary.png);
-    box-shadow: 0 0 0 6px var(--white);
+    box-shadow: 0 0 0 6px $white;
     background-repeat: repeat-x;
     background-position: 0 140px;
     animation: fill 2800ms forwards;
@@ -35,7 +36,7 @@ svg {
     height: 70px;
     width: 40px;
     background-color: transparent;
-    border: 6px solid var(--white);
+    border: 6px solid $white;
     position: relative;
     left: 186px;
     top: 2px;
