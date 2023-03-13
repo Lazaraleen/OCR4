@@ -313,10 +313,9 @@ button:hover {
   background: #F6F6F6;
   padding: 20px 0 25px 0;
 }
-#restaurants h1 {
+#restaurants h2 {
   margin-left: 20px;
   padding: 2em 0 1.5em 1em;
-  font-size: 1.5em;
 }
 
 .resto {
@@ -418,6 +417,29 @@ footer p {
 
 .logo {
   font-family: "Shrikhand", cursive;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 50px 0;
+  }
+  footer .logo {
+    padding-right: 50px;
+  }
+  footer h2 {
+    margin-bottom: 8px;
+  }
+  footer div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+  }
+  footer div:nth-child(2) p {
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

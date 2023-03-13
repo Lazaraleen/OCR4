@@ -22,3 +22,26 @@ footer {
 .logo {
     font-family: 'Shrikhand', cursive;
 }
+
+@media screen and (min-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 50px 0;
+        .logo {
+            padding-right: 50px;
+        }
+        h2 {
+            margin-bottom: 8px;
+        }
+        div:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            padding-right: 40px;
+            p {
+                padding: 0 20px;
+            }
+        }
+    }
+}
