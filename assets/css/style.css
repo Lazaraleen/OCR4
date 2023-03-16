@@ -118,6 +118,11 @@ svg {
     z-index: -1;
   }
 }
+@media screen and (max-width: 634px) {
+  .cup {
+    left: 30%;
+  }
+}
 header {
   display: flex;
   align-items: center;
